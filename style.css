@@ -1,3 +1,9 @@
 body{
-    background : rebeccapurple;
+    background:yellowgreen;
+    color:white;
+}
+ul {background: black;
+}
+ul li{
+    display: inline
 }

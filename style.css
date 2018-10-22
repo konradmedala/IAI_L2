@@ -1,9 +1,23 @@
-body{
-    background:red;
-    color:white;
+body {
+    background: greenyellow;
+    color: lightcyan;
 }
-ul {background: green;
+
+ul {
+    background: lightblue;
+
 }
-ul li{
+
+ul li {
     display: inline
+}
+
+a {
+    background-color: lightpink;
+    transition: all 1s;
+    padding: 2px;
+}
+
+a:hover {
+    background-color: gold;
 }

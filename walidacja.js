@@ -1,16 +1,103 @@
-let  send document.querySelector(',send');
-let  clear document.querySelector(',clear');
+let send = document.querySelector(".send");
 
-send.addEventListener('click',function () {
-        console.log('Przycisk został wciśnięty');
+    send.addEventListener("click", checkForm);
 
-        if()
 
-})
+    function addClass(element, className) {
+        element.classList.add(className);
+    }
 
-clear.addEventListener('click',function () {
-    console.log('Przycisk został wciśnięty')
-})
+    function removeClass(element, className) {
+        element.classList.remove(className);
+    }
 
+
+		
+		let iimię    = document.querySelector("#imię");
+		let inazwisko = document.querySelector("#nazwisko");
+		let iwiek     = document.querySelector("#wiek");
+		
+		
+        let iimięV     = iimię.value;
+		let inazwiskoV  = inazwisko.value;
+		let iwiekV      = iwiek.value;
+		
+
+    function checkForm() {
 
     
+
+       
+
+        if(iimięv === '')  {
+            addClass(iimię, 'is-invalid');
+			 removeClass(iimię, 'is-valid');
+			document.getElementById('dimię').innerHTML= "Proszę wypełnić Pole";
+			document.getElementById('zimię').innerHTML= "";
+        }
+		
+	else if(parseInt(iimięV)){
+            addClass(iimię, 'is-invalid');
+			 removeClass(iimię, 'is-valid');
+			document.getElementById('dimię').innerHTML= "Proszę wypełnić Pole literami";
+			document.getElementById('zimię').innerHTML= "";
+        }
+	else{
+			 removeClass(iimię, 'is-invalid');
+			  addClass(iimię, 'is-valid');
+			document.getElementById('zimię').innerHTML= "OK";
+			document.getElementById('dimię').innerHTML= "";
+			
+        }
+		
+		
+    if(inazwiskoV === '')  {
+            addClass(inazwisko, 'is-invalid');
+			 removeClass(inazwisko, 'is-valid');
+			document.getElementById('dnazwisko').innerHTML= "Proszę wypełnić Pole";
+			document.getElementById('znazwisko').innerHTML= "";
+        }
+		
+	else if(parseInt(inazwiskoV)){
+            addClass(inazwisko, 'is-invalid');
+			 removeClass(inazwisko, 'is-valid');
+			document.getElementById('dnazwisko').innerHTML= "Proszę wypełnić Pole literami";
+			document.getElementById('znazwisko').innerHTML= "";
+        }
+	else{
+			 removeClass(inazwisko, 'is-invalid');
+			  addClass(inazwisko, 'is-valid');
+			document.getElementById('znazwisko').innerHTML= "OK";
+			document.getElementById('dnazwisko').innerHTML= "";
+			
+        }
+		
+		
+		
+	if(iwiekV === '')  {
+            addClass(iwiek, 'is-invalid');
+			 removeClass(iwiek, 'is-valid');
+			document.getElementById('dwiek').innerHTML= "Proszę wypełnić Pole";
+			document.getElementById('zwiek').innerHTML= "";
+        }
+		
+		
+	else if (!parseInt(iwiekV) || isNaN(iwiekV) || iwiekV < 1 || iwiekV > 100) {
+            addClass(iwiek, 'is-invalid');
+			document.getElementById('aage').innerHTML= "ZLE";
+			 addClass(iwiek, 'is-invalid');
+			 removeClass(iwiek, 'is-valid');
+			document.getElementById('dwiek').innerHTML= "Proszę wypełnić Pole liczbami  (10-120)";
+			document.getElementById('zwiek').innerHTML= "";	
+        } 
+	else {
+            removeClass(wiek, 'is-invalid');
+			addClass(iwiek, 'is-valid');
+			document.getElementById('zwiek').innerHTML= "OK";
+			document.getElementById('dwiek').innerHTML= "";	
+        }
+		
+    
+	
+	  
+	}

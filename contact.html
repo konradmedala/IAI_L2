@@ -18,15 +18,19 @@
 <form>
     <div class="form-group">
         <label for="imię">Wpisz swoje imię</label>
-        <input type="text" class="form-control" id="imię" placeholder="Konrad">
+        <input type="text" class="form-control" id="imię" >
+			<div id="dimię"  type="text" class="zle"></div>
+			<div id="zimię"  type="text" class="dobrze"></div>
     </div>
     <div class="form-group">
         <label for="nazwisko">Wpisz swoje nazwisko</label>
-        <input type="text" class="form-control" id="Nazwisko" placeholder="Mędala">
+        <input type="text" class="form-control" id="nazwisko" >
+			<div id="dnazwisko"  type="text" class="zle"></div>
+			<div id="znazwisko"  type="text" class="dobrze"></div>
     </div>
     <div class="form-group">
         <label for="e-mail">Wpisz swój e-mail</label>
-        <input type="text" class="form-control" id="e-mail" placeholder="30771@student.pwsztar.edu.pl">
+        <input type="text" class="form-control" id="e-mail" >
 
 
         <div class="form-group">
@@ -43,8 +47,10 @@
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
         <div class="form-group">
-            <label for="age">Wybierz swój wiek</label>
-            <input type="number" name="age" id="age" min="10" max="120">
+            <label for="wiek">Wybierz swój wiek</label>
+            <input type="number" name="wiek" id="wiek" min="10" max="120">
+				<div id="dwiek" type="number" class="zle"></div>
+			    <div id="zwiek" type="number" class="dobrze"></div>
         </div>
 
         <div>
@@ -60,11 +66,12 @@
         </div>
 
 
-        <button class="btn btn-primary" type="submit" class="submit">Wyślij</button>
-        <button class="btn btn-danger" type="reset" class="reset">Wyczyść</button>
+        <button class="send" type="submit" >Wyślij</button>
+        <button class="reset" type="reset" >Wyczyść</button>
     </div>
     <div>
         <script src="walidacja.js" type="text/javascript">    </script>
+		
 
     </div>
 </form>

@@ -13,40 +13,40 @@ let send = document.querySelector(".send");
 
 
 		
-		let iimię    = document.querySelector("#imię");
+		let iimie    = document.querySelector("#imie");
 		let inazwisko = document.querySelector("#nazwisko");
 		let iwiek     = document.querySelector("#wiek");
 		
 		
-        let iimięV     = iimię.value;
+        let iimieV     = iimie.value;
 		let inazwiskoV  = inazwisko.value;
 		let iwiekV      = iwiek.value;
 		
 
     function checkForm() {
 
-    
+
 
        
 
-        if(iimięv === '')  {
-            addClass(iimię, 'is-invalid');
-			 removeClass(iimię, 'is-valid');
-			document.getElementById('dimię').innerHTML= "Proszę wypełnić Pole";
-			document.getElementById('zimię').innerHTML= "";
+        if(iimieV === '')  {
+            addClass(iimie, 'is-invalid');
+			 removeClass(iimie, 'is-valid');
+			document.getElementById('dimie').innerHTML= "Proszę wypełnić Pole";
+			document.getElementById('zimie').innerHTML= "";
         }
 		
 	else if(parseInt(iimięV)){
-            addClass(iimię, 'is-invalid');
-			 removeClass(iimię, 'is-valid');
-			document.getElementById('dimię').innerHTML= "Proszę wypełnić Pole literami";
-			document.getElementById('zimię').innerHTML= "";
+            addClass(iimie, 'is-invalid');
+			 removeClass(iimie, 'is-valid');
+			document.getElementById('dimie').innerHTML= "Proszę wypełnić Pole literami";
+			document.getElementById('zimie').innerHTML= "";
         }
 	else{
-			 removeClass(iimię, 'is-invalid');
-			  addClass(iimię, 'is-valid');
-			document.getElementById('zimię').innerHTML= "OK";
-			document.getElementById('dimię').innerHTML= "";
+			 removeClass(iimie, 'is-invalid');
+			  addClass(iimie, 'is-valid');
+			document.getElementById('zimie').innerHTML= "OK";
+			document.getElementById('dimie').innerHTML= "";
 			
         }
 		
@@ -71,8 +71,8 @@ let send = document.querySelector(".send");
 			document.getElementById('dnazwisko').innerHTML= "";
 			
         }
-		
-		
+
+
 		
 	if(iwiekV === '')  {
             addClass(iwiek, 'is-invalid');

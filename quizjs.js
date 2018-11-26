@@ -1,6 +1,6 @@
 let currentQuestion=0;
 let score=0;
-let totalQuestions=questions.length;
+let totalQuestions = questions.length;
 
 let container=document.getElementById('quizContainer');
 let questionElement =document.getElementById('question');

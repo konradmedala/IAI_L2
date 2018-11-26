@@ -4,76 +4,75 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<ul>
-    <li><a href="index.html">Strona głowna</a></li>
-    <li><a href=contact.html> kontakt</a>
-    <li><a href="map.html">Mapa</a>
-    </li>
-</ul>
-<form>
-    <div class="form-group">
-        <label for="imię">Wpisz swoje imię</label>
-        <input type="text" class="form-control" id="imię" >
-			<div id="dimię"  type="text" class="zle"></div>
-			<div id="zimię"  type="text" class="dobrze"></div>
-    </div>
-    <div class="form-group">
-        <label for="nazwisko">Wpisz swoje nazwisko</label>
-        <input type="text" class="form-control" id="nazwisko" >
-			<div id="dnazwisko"  type="text" class="zle"></div>
-			<div id="znazwisko"  type="text" class="dobrze"></div>
-    </div>
-    <div class="form-group">
-        <label for="e-mail">Wpisz swój e-mail</label>
-        <input type="text" class="form-control" id="e-mail" >
-
-
+    <ul>
+        <li><a href="index.html">Strona głowna</a></li>
+        <li><a href=contact.html> kontakt</a>
+        <li><a href="map.html">Mapa</a>
+        </li>
+    </ul>
+    <form>
         <div class="form-group">
-            <label for="Wybierz płeć">Wybór płci</label>
-            <select class="form-control" id="Wybierz płeć">
-                <option>Mężczyzna</option>
-                <option>Kobieta</option>
-
-
-            </select>
+            <label for="imie">Wpisz swoje imię</label>
+            <input type="text" class="form-control" id="imie" required />
+            <div id="dimie" type="text" class="zle"></div>
+            <div id="zimie" type="text" class="dobrze"></div>
         </div>
         <div class="form-group">
-            <label for="exampleFormControlTextarea1">Opis</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <label for="nazwisko">Wpisz swoje nazwisko</label>
+            <input type="text" class="form-control" id="nazwisko" required />
+            <div id="dnazwisko" type="text" class="zle"></div>
+            <div id="znazwisko" type="text" class="dobrze"></div>
         </div>
         <div class="form-group">
-            <label for="wiek">Wybierz swój wiek</label>
-            <input type="number" name="wiek" id="wiek" min="10" max="120">
-				<div id="dwiek" type="number" class="zle"></div>
-			    <div id="zwiek" type="number" class="dobrze"></div>
+            <label for="e-mail">Wpisz swój e-mail</label>
+            <input type="text" class="form-control" id="e-mail" required />
+        </div>
+            <div class="form-group">
+                <label for="Wybierz płeć">Wybór płci</label>
+                <select class="form-control" id="Wybierz płeć" required />
+                    <option>Mężczyzna</option>
+                    <option>Kobieta</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Opis</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="wiek">Wybierz swój wiek</label>
+                <input id="wiek" type="text" name="wiek" placeholder="Podaj wiek:" required />
+                <div id="dwiek" type="number" class="zle"></div>
+                <div id="zwiek" type="number" class="dobrze"></div>
+            </div>
+
+
+            <div>
+                <label for="Stan cywilny">Stan cywilny</label>
+                <select class="form-control" id="Stan cywilny" >
+                    <option>Kawaler</option>
+                    <option>Panna</option>
+                    <option>Żonaty</option>
+                    <option>Zamężna</option>
+                    <option>Wdowiec</option>
+                    <option>Wdowa</option>
+                </select>
+            </div>
+
+
+            <button type="submit" class="send">Wyślij</button>
+            <button type="reset" class="reset">Wyczyść</button>
+
         </div>
 
-        <div>
-            <label for="Stan cywilny">Stan cywilny</label>
-            <select class="form-control" id="Stan cywilny">
-                <option>Kawaler</option>
-                <option>Panna</option>
-                <option>Żonaty</option>
-                <option>Zamężna</option>
-                <option>Wdowiec</option>
-                <option>Wdowa</option>
-            </select>
-        </div>
-
-
-        <button class="send" type="submit" >Wyślij</button>
-        <button class="reset" type="reset" >Wyczyść</button>
-    </div>
-    <div>
         <script src="walidacja.js" type="text/javascript">    </script>
-		
 
-    </div>
-</form>
+    </form>
 </body>
+
 </html>
